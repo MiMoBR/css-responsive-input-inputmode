@@ -1,0 +1,27 @@
+Source: https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute
+
+------------ INPUTMODE ------------ 
+
+<input type="text" inputmode="email" />
+
+Keyword	Description
+none	The user agent should not display a virtual keyboard. This keyword is useful for content that renders its own keyboard control.
+text	The user agent should display a virtual keyboard capable of text input in the user's locale.
+tel	The user agent should display a virtual keyboard capable of telephone number input. This should including keys for the digits 0 to 9, the "#" character, and the "*" character. In some locales, this can also include alphabetic mnemonic labels (e.g., in the US, the key labeled "2" is historically also labeled with the letters A, B, and C).
+url	The user agent should display a virtual keyboard capable of text input in the user's locale, with keys for aiding in the input of URLs, such as that for the "/" and "." characters and for quick input of strings commonly found in domain names such as "www." or ".com".
+email	The user agent should display a virtual keyboard capable of text input in the user's locale, with keys for aiding in the input of e-mail addresses, such as that for the "@" character and the "." character.
+numeric	The user agent should display a virtual keyboard capable of numeric input. This keyword is useful for PIN entry.
+decimal	The user agent should display a virtual keyboard capable of fractional numeric input. Numeric keys and the format separator for the locale should be shown.
+search	The user agent should display a virtual keyboard optimized for search.
+
+------------ ENTERKEYHINT ------------
+
+
+Keyword	Description
+enter	The user agent should present a cue for the operation 'enter', typically inserting a new line.
+done	The user agent should present a cue for the operation 'done', typically meaning there is nothing more to input and the input method editor (IME) will be closed.
+go	The user agent should present a cue for the operation 'go', typically meaning to take the user to the target of the text they typed.
+next	The user agent should present a cue for the operation 'next', typically taking the user to the next field that will accept text.
+previous	The user agent should present a cue for the operation 'previous', typically taking the user to the previous field that will accept text.
+search	The user agent should present a cue for the operation 'search', typically taking the user to the results of searching for the text they have typed.
+send	The user agent should present a cue for the operation 'send', typically delivering the text to its target.
